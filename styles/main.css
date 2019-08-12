@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand&display=swap');
 
 body {
-    background: #82e0db;
+    background: linear-gradient(90deg, rgba(130,224,198,1) 0%, rgba(130,224,219,1) 100%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    padding: 2em;
+    /* text-align: center; */
+}
+container {
+    max-width:700px;
 }
 
 h1 {
@@ -16,18 +24,28 @@ h2 {
 
 h3 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     letter-spacing: 0.05rem;
 }
 
 h3 a {
-    color: #969D9D;
+    color: #FCCA46;
     text-decoration: none;
 }
 
 .intro {
     max-width: 960px;
+    line-height: 2.5em;
+}
+
+.intro-link {
+    font-weight: 900;
+    transition: color .2s,background-color .2s;
+}
+.intro-link:hover {
+    background-color: #FCCA46;
+    color: rgba(130,224,198,1);
 }
 
 footer {
@@ -37,18 +55,17 @@ footer {
     height: 100px;
    }
    
-   .footer-content {
-    max-width:960px;
-    margin:0 auto;
+   /* .footer-content {
     font-style: normal;
     font-weight: 300;
     line-height: 1.4;
     color: #FFE0E0;
     letter-spacing: .03em;
-   }
+   } */
    
    .social {
     float:left;
+    transition-delay: 10s;
    }
    
    .social li {
@@ -56,10 +73,11 @@ footer {
    }
    
    .social li a {
-    color:#FFE0E0;
+    color:#FCCA46;
     padding:0.2em;
     font-size:1.8em;
     font-weight:600;
+    text-decoration: none;
    }
    
    .social li a:hover {
